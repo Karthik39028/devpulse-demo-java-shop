@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: devpulse-demo-java-shop-config
+data:
+  application.properties: |
+    server.port=8080
+    spring.datasource.url=jdbc:h2:mem:shopdb
+    spring.datasource.driverClassName=org.h2.Driver
+    spring.datasource.username=sa
+    spring.datasource.password=
+    spring.h2.console.enabled=true
+    spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.show-sql=true
